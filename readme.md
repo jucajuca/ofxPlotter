@@ -15,10 +15,15 @@ Usage
 -----
 ofxPlotter is designed to be as simple and as minimal as possible for plotting functions in realtime.
 
-setWindow(int windowSize); // set window (a.k.a. plot length)
+plotter["myData"].setPlotLength(240);            // set the number of values to be stored
+plotter["myData"].setColor( ofColor(255,0,0) );  // set the color of the plot
+plotter["myData"].setMinMaxValue( 0.f, 1024.f ); // set the min and max values
+plotter["myData"].drawGuidelines = false; 
+plotter["myData"].drawInfo = false;
+plotter["myData"].drawOverlay = false; 
 
-plotter["variable name"] << variable; // add a new data to the plot "variable name"
+plotter["myData"].setCurrentValue( variable ); // add a new data to the plot "variable name". Takes int and float
 
-plotter.draw(100, 100, 300, 300); // draw the plot
+plotter.drawPlot("myData", 100, 100, 300, 300); // draw a single plot. x,y,width,height
 
-Every _variable name_'s plot will be drawn separately in a Rectangle that's position on screen is x = 100, y = 100 and size is width = 300, height = 300.
+plotter.drawAll(); // Every _variable name_'s plot will be drawn using the whole screen
