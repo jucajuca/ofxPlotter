@@ -34,7 +34,8 @@ example/**/[Rr]elease*/
 example/**/gcc-debug/
 example/**/gcc-release/
 example/obj/
-example/bin/*
+example/obj/**
+example/bin/
 tests/**/[Dd]ebug*/
 tests/**/[Rr]elease*/
 tests/**/gcc-debug/
