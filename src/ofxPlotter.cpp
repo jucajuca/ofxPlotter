@@ -12,9 +12,9 @@
 
 
 ofxPlotter::dataCollection::dataCollection() :  plotColor ( ofColor(0) ) ,
-                                                autoRange ( True ),
-                                                drawOverlay ( True ),
-                                                drawInfo    ( True ),
+                                                autoRange ( true ),
+                                                drawOverlay ( true ),
+                                                drawInfo    ( true ),
                                                 plotLength ( 400 ),
                                                 maxValue ( 0 ),
                                                 minValue ( 0 ) {
