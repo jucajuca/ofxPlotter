@@ -33,6 +33,7 @@ ofxPlotter is designed to be as simple and as minimal as possible for plotting f
 
 ofxPlotter
 Copyright (C) 2017-2019 Juan Carlos Carvajal Bermudez
+Based on the plugin by zebra
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
